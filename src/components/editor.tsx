@@ -55,7 +55,7 @@ const Editor = () => {
         <>
             <Toolbar editor={editor} />
             <EditorContent editor={editor} spellCheck="false" />
-            <button className="inset-0 absolute bgrounded-md p-2 w-fit h-fit bg-blue-500" onClick={() => console.log(editor?.getHTML())}>Show Output</button>
+            <button className="right-0 top-0 mt-9 rounded-lg mr-10 absolute bgrounded-md p-2 px-3 w-fit h-fit bg-blue-500 font-medium" onClick={() => console.log(editor?.getHTML())}>Show Output</button>
         </>
     )
 

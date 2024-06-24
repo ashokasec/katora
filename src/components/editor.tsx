@@ -11,10 +11,13 @@ import Blockquote from "@tiptap/extension-blockquote"
 import Image from "@tiptap/extension-image"
 import Document from '@tiptap/extension-document'
 import Placeholder from '@tiptap/extension-placeholder'
+import CodeBlock from "@tiptap/extension-code-block"
+import BulletList from '@tiptap/extension-bullet-list'
+import { content } from "./content"
 
 const CustomDocument = Document.extend({
     content: 'heading block*',
-  })
+})
 
 const Editor = () => {
     const editor = useEditor({
@@ -41,9 +44,11 @@ const Editor = () => {
             Blockquote.configure(),
             Image.configure({
                 inline: false
-            })
+            }),
+            CodeBlock.configure(),
+            BulletList.configure(),
         ],
-        content: `<h1>am ashoka</h1>`,
+        content: content,
         editorProps: {
             attributes: {
                 class: 'outline-0',

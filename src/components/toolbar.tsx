@@ -1,4 +1,4 @@
-import { AlignCenter, AlignLeft, AlignRight, Bold, Code, Heading1, Heading2, Heading3, Highlighter, Image, Italic, Link, List, Minus, Plus, Quote, Soup, Underline, Unlink } from "lucide-react"
+import { AlignCenter, AlignLeft, AlignRight, Bold, Code, Heading1, Heading2, Heading3, Highlighter, Image, Italic, Link, List, Quote, Soup, Underline, Unlink } from "lucide-react"
 
 interface SmallButtonProps {
     isTypeActive?: boolean,

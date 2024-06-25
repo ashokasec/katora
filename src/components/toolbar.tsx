@@ -77,7 +77,7 @@ const Toolbar = ({ editor }: any) => {
         {
             type: "2",
             icon: <Highlighter size={18} />,
-            onclick: () => editor.chain().focus().toggleHeading({ level: 2 }).run()
+            onclick: () => editor.commands.toggleHighlight().run()
         },
         {
             type: "3",

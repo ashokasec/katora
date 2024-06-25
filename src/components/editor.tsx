@@ -1,6 +1,7 @@
 import { EditorContent, useEditor } from "@tiptap/react"
 import StarterKit from "@tiptap/starter-kit"
 import Toolbar from "./toolbar"
+import { content } from "./content"
 
 
 import TextAlign from '@tiptap/extension-text-align'
@@ -13,7 +14,7 @@ import Document from '@tiptap/extension-document'
 import Placeholder from '@tiptap/extension-placeholder'
 import CodeBlock from "@tiptap/extension-code-block"
 import BulletList from '@tiptap/extension-bullet-list'
-import { content } from "./content"
+import Highlight from '@tiptap/extension-highlight'
 
 const CustomDocument = Document.extend({
     content: 'heading block*',
@@ -37,6 +38,7 @@ const Editor = () => {
                 types: ['paragraph'],
             }),
             Underline.configure(),
+            Highlight.configure(),
             Link.configure(),
             Heading.configure({
                 levels: [1, 2, 3],

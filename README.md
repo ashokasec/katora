@@ -1,30 +1,14 @@
-# React + TypeScript + Vite
+# Katora - On the Go Rich Text Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🥣 **Katora** is a Tiptap-powered on-the-go rich text editor which makes it simple to create blog applications in NextJS or ReactJS. If you find other WYSIWYG editors unattractive or difficult, Katora is here to save you time and effort with its simple, user-friendly interface and essential features.
 
-Currently, two official plugins are available:
+## Why Katora?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+When you're tasked with creating a blog app in NextJS or ReactJS, setting up a rich text editor can be a headache. Most available editors either look outdated or require complex configurations. Katora is built to solve this problem by offering a straightforward, aesthetically pleasing rich text editor that integrates seamlessly into your projects.
 
-## Expanding the ESLint configuration
+## Features
+- **Easy Integration**: Designed for quick setup in ReactJS and NextJS applications.
+- **User-Friendly Interface**: A clean and intuitive design that enhances the user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## To-Do Soon
+**Release a NPM Package to make the setup more easier and smooth**

@@ -75,12 +75,12 @@ const Toolbar = ({ editor }: any) => {
             onclick: () => editor.commands.toggleBlockquote().run()
         },
         {
-            type: "2",
+            type: "highlight",
             icon: <Highlighter size={18} />,
             onclick: () => editor.commands.toggleHighlight().run()
         },
         {
-            type: "3",
+            type: "codeBlock",
             icon: <Code size={18} />,
             onclick: () => editor.chain().focus().toggleCodeBlock().run()
         },
@@ -139,7 +139,7 @@ const Toolbar = ({ editor }: any) => {
                 <div className="bg-[#1b1c1d] border border-[#2c2c2c] p-1 flex rounded-lg">
                     {
                         seperating.map((elem, index) => (
-                            <SmallButtons key={index} onClick={elem.onclick} icon={elem.icon} />
+                            <SmallButtons isTypeActive={editor.isActive(elem.type)} key={index} onClick={elem.onclick} icon={elem.icon} />
                         ))
                     }
                 </div>

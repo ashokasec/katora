@@ -85,7 +85,7 @@ body {
 }
 
 .tiptap pre {
-  @apply bg-gray-400/15 border border-gray-500/25 px-5 py-4 rounded-md text-[15px] text-gray-300
+  @apply bg-gray-400/15 border border-gray-500/25 px-5 py-4 rounded-md text-[15px] text-gray-300 my-4
 }
 
 .tiptap blockquote p {
